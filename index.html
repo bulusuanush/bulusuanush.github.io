@@ -539,7 +539,7 @@ button{ font:inherit; }
   align-items:start;
   margin-top:clamp(2.5rem,5vw,4rem);
 }
-/* Portrait slot: replace the placeholder span with <img src="portrait.jpg" alt="Anush Bulusu"> */
+/* Portrait: swap the src in the figure below to change the photo */
 .portrait{
   margin:0;
   max-width:280px;
@@ -550,7 +550,6 @@ button{ font:inherit; }
   overflow:hidden;
 }
 .portrait img{ width:100%; height:100%; object-fit:cover; }
-.portrait__ph{ font-family:var(--serif); font-size:2.2rem; color:var(--ink-3); letter-spacing:.06em; }
 .beyond{ margin-top:2.25rem; max-width:280px; }
 .beyond dt{ font-size:var(--t-xs); letter-spacing:.12em; text-transform:uppercase; color:var(--c-person); font-weight:500; }
 .beyond dd{ margin:.3rem 0 1.15rem; font-size:var(--t-sm); line-height:1.6; color:var(--ink-2); }
@@ -1249,9 +1248,8 @@ button{ font:inherit; }
 
         <div class="about__split">
           <div>
-            <!-- Portrait slot: replace the placeholder span with <img src="portrait.jpg" alt="Anush Bulusu"> -->
-            <figure class="portrait" aria-hidden="true">
-              <span class="portrait__ph">AB</span>
+            <figure class="portrait">
+              <img src="portrait.jpg" width="800" height="1000" loading="lazy" alt="Anush Bulusu" />
             </figure>
             <dl class="beyond">
               <dt>Beyond work</dt>
