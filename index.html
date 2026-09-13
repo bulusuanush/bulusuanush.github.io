@@ -1,0 +1,1761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Anush Bulusu — Enterprise AI, Product Leadership, Transformation Strategy</title>
+<meta name="description" content="Anush Bulusu works at the intersection of AI product value, enterprise transformation and AI-native product craft — turning emerging AI capabilities into scalable products, operating models and measurable outcomes." />
+<meta name="author" content="Anush Bulusu" />
+<meta name="theme-color" content="#FBFBF9" />
+<link rel="canonical" href="https://anushbulusu.com/" />
+
+<!-- icons -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23FBFBF9'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='30' fill='%23151515' text-anchor='middle'%3EAB%3C/text%3E%3Crect x='23' y='50' width='18' height='2' fill='%232855D9'/%3E%3C/svg%3E" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+<!-- OpenGraph / social metadata -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Anush Bulusu" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:title" content="Anush Bulusu — Enterprise AI, Product Leadership, Transformation Strategy" />
+<meta property="og:description" content="Where AI has to become real business value: product strategy, enterprise transformation and AI-native product craft." />
+<meta property="og:url" content="https://anushbulusu.com/" />
+<meta property="og:image" content="https://anushbulusu.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Anush Bulusu — Enterprise AI, Product Leadership, Transformation Strategy" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Anush Bulusu — Enterprise AI, Product Leadership, Transformation Strategy" />
+<meta name="twitter:description" content="Where AI has to become real business value: product strategy, enterprise transformation and AI-native product craft." />
+<meta name="twitter:image" content="https://anushbulusu.com/og-image.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,200;0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&display=swap" rel="stylesheet" />
+
+<style>
+/* ============================================================
+   TOKENS
+   ============================================================ */
+:root{
+  /* surfaces */
+  --paper:      #FBFBF9;
+  --paper-alt:  #F4F3EF;
+  --paper-warm: #F4F1EC;
+
+  /* type colours */
+  --ink:        #151515;
+  --ink-2:      #626262;
+  --ink-3:      #929292;
+  --rule:       #E4E2DC;
+
+  /* accents — used sparingly */
+  --accent:     #2855D9;
+  --c-value:    #287D72;
+  --c-transform:#5368B8;
+  --c-craft:    #A8772D;
+  --c-person:   #9A7563;
+
+  --sans: "Inter", system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  --serif: "Newsreader", Georgia, "Times New Roman", serif;
+
+  --t-xs:  0.75rem;
+  --t-sm:  0.875rem;
+  --t-base:1.0625rem;
+  --t-md:  1.1875rem;
+  --t-lg:  1.375rem;
+  --t-xl:  clamp(1.5rem, 2.3vw, 1.9rem);
+  --t-2xl: clamp(1.85rem, 3.3vw, 2.7rem);
+  --t-3xl: clamp(2.3rem, 4.9vw, 3.7rem);
+
+  --wrap: 1140px;
+  --gutter: clamp(1.25rem, 5vw, 4rem);
+  --rail: 148px;
+  --rail-gap: clamp(2rem, 5vw, 4.5rem);
+  --sec-y: clamp(5rem, 10vw, 9rem);
+  --nav-h: 68px;
+}
+
+/* ============================================================
+   BASE
+   ============================================================ */
+*,*::before,*::after{ box-sizing:border-box; }
+html{
+  -webkit-text-size-adjust:100%;
+  scroll-behavior:smooth;
+  scroll-padding-top:calc(var(--nav-h) + 16px);
+}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--sans);
+  font-size:var(--t-base);
+  font-weight:400;
+  line-height:1.72;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+h1,h2,h3,h4{ margin:0; font-weight:400; }
+p{ margin:0; }
+ul,ol{ margin:0; padding:0; list-style:none; }
+a{ color:inherit; }
+button{ font:inherit; }
+:focus-visible{ outline:2px solid var(--accent); outline-offset:3px; border-radius:2px; }
+
+.skip{
+  position:absolute; left:-9999px; top:0; z-index:200;
+  background:var(--ink); color:var(--paper);
+  padding:.6rem 1rem; font-size:var(--t-sm);
+}
+.skip:focus{ left:.75rem; top:.75rem; }
+
+/* ============================================================
+   TYPE PRIMITIVES
+   ============================================================ */
+.display{
+  font-family:var(--serif);
+  font-weight:300;
+  line-height:1.14;
+  letter-spacing:-0.015em;
+  color:var(--ink);
+  text-wrap:balance;
+}
+.h-hero{ font-size:var(--t-3xl); line-height:1.08; }
+.h-sec{ font-size:var(--t-2xl); }
+.h-sub{ font-size:var(--t-xl); line-height:1.22; }
+
+.eyebrow{
+  font-size:var(--t-xs);
+  font-weight:500;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--accent);
+}
+.lede{
+  font-size:var(--t-md);
+  line-height:1.68;
+  color:var(--ink-2);
+  max-width:31em;
+}
+.prose{ max-width:33em; color:var(--ink-2); }
+.prose p + p{ margin-top:1.15em; }
+.prose strong{ color:var(--ink); font-weight:500; }
+.note{ font-size:var(--t-sm); line-height:1.6; color:var(--ink-3); max-width:46em; }
+
+/* questions set as serif italic, no bullets, no boxes */
+.qs{ max-width:32em; }
+.qs li{
+  font-family:var(--serif);
+  font-size:var(--t-md);
+  font-style:italic;
+  line-height:1.5;
+  color:var(--ink);
+  padding:.42rem 0;
+}
+
+/* small section label above a block */
+.label{
+  font-size:var(--t-xs);
+  letter-spacing:.13em;
+  text-transform:uppercase;
+  color:var(--ink-3);
+  font-weight:500;
+}
+
+/* oversized editorial pull statement — no box */
+.pull{
+  font-family:var(--serif);
+  font-weight:300;
+  font-size:clamp(1.5rem, 3.1vw, 2.35rem);
+  line-height:1.28;
+  letter-spacing:-.016em;
+  color:var(--ink);
+  max-width:26em;
+  margin-block:clamp(1rem,2vw,1.5rem);
+}
+.pull--lead::before{
+  content:"";
+  display:block;
+  width:40px; height:2px;
+  background:var(--accent);
+  margin-bottom:1.6rem;
+}
+
+/* ============================================================
+   LAYOUT
+   ============================================================ */
+.wrap{ width:100%; max-width:var(--wrap); margin-inline:auto; padding-inline:var(--gutter); }
+.section{ padding-block:var(--sec-y); }
+.section--rule{ border-top:1px solid var(--rule); }
+.grid{
+  display:grid;
+  grid-template-columns:var(--rail) minmax(0,1fr);
+  column-gap:var(--rail-gap);
+  align-items:start;
+}
+.rail{ display:grid; gap:.65rem; align-content:start; }
+.rail__num{
+  font-family:var(--serif);
+  font-size:1rem;
+  color:var(--accent);
+  letter-spacing:.05em;
+}
+.stack > * + *{ margin-top:1.8rem; }
+.stack-lg > * + *{ margin-top:clamp(3rem,5.5vw,4.75rem); }
+
+/* ============================================================
+   NAV
+   ============================================================ */
+.nav{
+  position:sticky; top:0; z-index:100;
+  background:rgba(250,250,248,.92);
+  backdrop-filter:saturate(140%) blur(12px);
+  border-bottom:1px solid transparent;
+  transition:border-color .3s ease;
+}
+.nav.is-stuck{ border-bottom-color:var(--rule); }
+.nav__inner{
+  min-height:var(--nav-h);
+  display:flex; align-items:center; justify-content:space-between; gap:1.5rem;
+  position:relative;
+}
+.brand{
+  font-family:var(--serif);
+  font-size:1.1rem;
+  text-decoration:none;
+  color:var(--ink);
+  white-space:nowrap;
+}
+.brand span{ color:var(--ink-3); }
+.nav__list{ display:flex; align-items:center; gap:clamp(.9rem,1.9vw,1.85rem); }
+.nav__list a{
+  position:relative;
+  display:block;
+  text-decoration:none;
+  font-size:var(--t-sm);
+  color:var(--ink-2);
+  padding-block:.5rem;
+  white-space:nowrap;
+  transition:color .2s ease;
+}
+.nav__list a:hover{ color:var(--ink); }
+.nav__list a[aria-current="true"]{ color:var(--ink); }
+.nav__list a[aria-current="true"]::after{
+  content:"";
+  position:absolute; left:0; right:0; bottom:.1rem;
+  height:1px; background:var(--accent);
+}
+.nav__toggle{
+  display:none;
+  background:none; border:1px solid var(--rule); color:var(--ink);
+  font-size:var(--t-sm); padding:.45rem .8rem; cursor:pointer; letter-spacing:.04em;
+}
+
+/* ============================================================
+   LINKS & BUTTONS — understated
+   ============================================================ */
+.btns{ display:flex; flex-wrap:wrap; align-items:center; gap:1rem 2rem; }
+.link{
+  display:inline-block;
+  font-size:var(--t-sm);
+  text-decoration:none;
+  color:var(--ink);
+  padding-bottom:.3rem;
+  border-bottom:1px solid var(--ink);
+  transition:color .2s ease, border-color .2s ease;
+}
+.link:hover{ color:var(--accent); border-bottom-color:var(--accent); }
+.link--quiet{ color:var(--ink-2); border-bottom-color:var(--rule); }
+.link--quiet:hover{ color:var(--accent); border-bottom-color:var(--accent); }
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero{ padding-top:clamp(4rem,9vw,7.5rem); padding-bottom:clamp(3rem,6vw,5rem); }
+.hero__id{
+  font-size:var(--t-xs);
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:var(--ink-3);
+}
+.hero h1{ max-width:16em; margin-block:1.5rem 1.9rem; }
+.hero .eyebrow{ display:block; margin-top:1.9rem; }
+.hero .btns{ margin-top:2.6rem; }
+
+/* credibility strip — thin rules, no boxes */
+.strip{ padding-bottom:clamp(3rem,6vw,5rem); }
+.strip__grid{
+  display:grid;
+  grid-template-columns:repeat(6,minmax(0,1fr));
+  border-top:1px solid var(--rule);
+}
+.strip__grid li{ padding:1.4rem 1.2rem 0 1.2rem; }
+.strip__grid li + li{ border-left:1px solid var(--rule); }
+.strip__grid li:first-child{ padding-left:0; }
+.strip__v{
+  display:block;
+  font-family:var(--serif);
+  font-size:1.5rem;
+  line-height:1.15;
+  color:var(--ink);
+}
+.strip__l{
+  display:block;
+  font-size:var(--t-sm);
+  line-height:1.5;
+  color:var(--ink-3);
+  margin-top:.4rem;
+}
+.strip .note{ margin-top:clamp(2.2rem,4vw,3.2rem); }
+
+/* ============================================================
+   POINT OF VIEW
+   ============================================================ */
+.pov__cols{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(0,.82fr);
+  gap:clamp(2rem,5vw,5rem);
+  align-items:start;
+}
+/* value chain — five points on one line */
+.chain{
+  margin-top:clamp(2.5rem,5vw,4rem);
+  position:relative;
+  display:grid;
+  grid-template-columns:repeat(5,minmax(0,1fr));
+  gap:0 1rem;
+}
+.chain::before{
+  content:"";
+  position:absolute; top:4px; left:0; right:0;
+  height:1px; background:var(--rule);
+}
+.chain li{ display:grid; gap:.9rem; justify-items:start; }
+.chain__dot{
+  width:9px; height:9px; box-sizing:border-box;
+  border-radius:50%;
+  border:1px solid var(--accent);
+  background:var(--paper);
+  opacity:calc(.4 + (var(--i) * .15));
+}
+.chain li:last-child .chain__dot{ background:var(--accent); }
+.chain__l{
+  font-size:var(--t-sm);
+  letter-spacing:.06em;
+  color:var(--ink-3);
+}
+.chain li:last-child .chain__l{ color:var(--ink); }
+
+/* ============================================================
+   THREE TRACKS — no card backgrounds
+   ============================================================ */
+.tracks{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  column-gap:clamp(1.75rem,3.5vw,3.25rem);
+  row-gap:3rem;
+  margin-top:clamp(2.5rem,5vw,4rem);
+}
+.tk{
+  display:grid;
+  gap:1.15rem;
+  align-content:start;
+  border-top:2px solid var(--tone);
+  padding-top:1.5rem;
+  text-decoration:none;
+  color:inherit;
+}
+.tk__n{ font-size:var(--t-xs); letter-spacing:.14em; text-transform:uppercase; color:var(--tone); font-weight:500; }
+.tk__name{ font-size:var(--t-sm); color:var(--ink-3); letter-spacing:.02em; }
+.tk__q{
+  font-family:var(--serif);
+  font-size:var(--t-lg);
+  font-weight:300;
+  line-height:1.26;
+  letter-spacing:-.012em;
+  color:var(--ink);
+}
+.tk__d{ font-size:var(--t-sm); line-height:1.68; color:var(--ink-2); }
+.tk__d p + p{ margin-top:.85em; }
+.tk__go{ font-size:var(--t-sm); color:var(--tone); }
+.tk__go em{ font-style:normal; border-bottom:1px solid transparent; transition:border-color .2s ease; }
+.tk:hover .tk__go em{ border-bottom-color:var(--tone); }
+
+/* accent scopes */
+.s-value{ --tone:var(--c-value); }
+.s-transform{ --tone:var(--c-transform); }
+.s-craft{ --tone:var(--c-craft); }
+.s-person{ --tone:var(--c-person); }
+.s-value .eyebrow, .s-transform .eyebrow, .s-craft .eyebrow, .s-person .eyebrow{ color:var(--tone); }
+.s-value .rail__num, .s-transform .rail__num, .s-craft .rail__num, .s-person .rail__num{ color:var(--tone); }
+.s-value .pull--lead::before, .s-transform .pull--lead::before,
+.s-craft .pull--lead::before, .s-person .pull--lead::before{ background:var(--tone); }
+
+/* ============================================================
+   FOUR PROOFS
+   ============================================================ */
+.proofs{ border-top:1px solid var(--rule); padding-top:1.8rem; }
+.proofs__row{
+  display:flex; flex-wrap:wrap; align-items:baseline; gap:.3rem .9rem;
+  font-family:var(--serif);
+  font-weight:300;
+  font-size:clamp(1.45rem,3.2vw,2.3rem);
+  line-height:1.18;
+  letter-spacing:-.015em;
+  margin-top:1.1rem;
+}
+.proofs__x{ color:var(--tone); font-size:.68em; }
+.proofs__note{ margin-top:1.3rem; font-size:var(--t-sm); color:var(--ink-2); }
+
+/* ============================================================
+   FIGURES / METRICS — serif number, thin rule, no boxes
+   ============================================================ */
+.figs{ display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); column-gap:clamp(1.5rem,3vw,2.75rem); row-gap:2.25rem; }
+.figs--3{ grid-template-columns:repeat(3,minmax(0,1fr)); }
+.figs li{ border-top:1px solid var(--rule); padding-top:1.1rem; }
+.figs__v{
+  display:block;
+  font-family:var(--serif);
+  font-weight:300;
+  font-size:clamp(1.8rem,3.2vw,2.5rem);
+  line-height:1.1;
+  letter-spacing:-.02em;
+  color:var(--ink);
+}
+.figs__l{ display:block; font-size:var(--t-sm); line-height:1.5; color:var(--ink-3); margin-top:.55rem; }
+
+/* single oversized figure */
+.fig-one{ border-top:1px solid var(--rule); padding-top:1.2rem; max-width:24em; }
+.fig-one b{
+  display:block;
+  font-family:var(--serif);
+  font-weight:300;
+  font-size:clamp(2.4rem,5.2vw,3.5rem);
+  line-height:1.04;
+  letter-spacing:-.025em;
+}
+.fig-one span{ display:block; font-size:var(--t-sm); color:var(--ink-3); margin-top:.6rem; }
+
+/* inline sequence of stages */
+.seq{ display:flex; flex-wrap:wrap; gap:.5rem 1.15rem; max-width:44em; }
+.seq li{ font-size:var(--t-sm); color:var(--ink-2); }
+.seq li + li{ padding-left:1.15rem; border-left:1px solid var(--rule); }
+
+/* simple keyword row */
+.words{ display:flex; flex-wrap:wrap; gap:.4rem 1.1rem; }
+.words li{ font-size:var(--t-sm); color:var(--ink-3); }
+.words li + li{ padding-left:1.1rem; border-left:1px solid var(--rule); }
+
+/* ============================================================
+   MATURITY LADDER
+   ============================================================ */
+.ladder li{
+  display:grid;
+  grid-template-columns:minmax(140px,auto) minmax(0,1fr);
+  gap:.35rem 2rem;
+  align-items:baseline;
+  border-top:1px solid var(--rule);
+  padding:1.15rem 0 1.15rem calc(var(--i) * clamp(6px,1.6vw,22px));
+}
+.ladder__n{ font-family:var(--serif); font-size:var(--t-md); color:var(--ink); }
+.ladder li:last-child .ladder__n{ color:var(--tone); }
+.ladder__d{ font-size:var(--t-sm); color:var(--ink-2); }
+
+/* ============================================================
+   TWO-COLUMN SPLIT
+   ============================================================ */
+.split{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:clamp(2rem,4vw,4rem);
+}
+.split h4{ font-size:var(--t-sm); letter-spacing:.03em; color:var(--tone); font-weight:500; }
+.split p{ font-size:var(--t-sm); color:var(--ink-3); margin-top:.4rem; }
+.split ul{ margin-top:1.1rem; }
+.split ul li{ font-size:var(--t-base); color:var(--ink); padding:.5rem 0; border-top:1px solid var(--rule); }
+
+/* domain list */
+.domains{ display:flex; flex-wrap:wrap; gap:.5rem 1.2rem; max-width:38em; }
+.domains li{ font-size:var(--t-base); color:var(--ink-2); }
+.domains li + li{ padding-left:1.2rem; border-left:1px solid var(--rule); }
+
+/* checklist */
+.lines{ max-width:34em; }
+.lines li{ font-size:var(--t-base); color:var(--ink); padding:.62rem 0; border-top:1px solid var(--rule); }
+
+/* ============================================================
+   SIX CRAFT CONCEPTS — rules, not cards
+   ============================================================ */
+.concepts{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  column-gap:clamp(1.75rem,3.5vw,3.25rem);
+  row-gap:clamp(2rem,3.5vw,3rem);
+}
+.concepts li{ border-top:1px solid var(--rule); padding-top:1.2rem; }
+.concepts h4{ font-size:var(--t-base); color:var(--ink); margin-bottom:.55rem; }
+.concepts h4::before{
+  content:"";
+  display:block;
+  width:18px; height:2px;
+  background:var(--tone);
+  margin-bottom:1rem;
+}
+.concepts p{ font-size:var(--t-sm); line-height:1.68; color:var(--ink-2); }
+
+/* ============================================================
+   CURRENT SCALE BAND
+   ============================================================ */
+.band{ background:var(--paper-alt); }
+.scale{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  column-gap:clamp(1.5rem,3vw,2.75rem);
+  row-gap:2rem;
+  margin-top:clamp(2rem,4vw,3rem);
+}
+.scale li{ border-top:1px solid var(--rule); padding-top:1.1rem; }
+.scale__v{ display:block; font-family:var(--serif); font-size:1.3rem; line-height:1.2; color:var(--ink); }
+.scale__l{ display:block; font-size:var(--t-sm); color:var(--ink-3); margin-top:.4rem; line-height:1.5; }
+
+/* ============================================================
+   ABOUT — warmer surface
+   ============================================================ */
+.about{ background:var(--paper-warm); }
+.about__sub{
+  font-family:var(--serif);
+  font-style:italic;
+  font-size:var(--t-md);
+  line-height:1.55;
+  color:var(--ink-2);
+  max-width:28em;
+  margin-top:1.2rem;
+}
+.about__split{
+  display:grid;
+  grid-template-columns:minmax(0,32fr) minmax(0,68fr);
+  gap:clamp(2rem,5vw,4.5rem);
+  align-items:start;
+  margin-top:clamp(2.5rem,5vw,4rem);
+}
+/* Portrait slot: replace the placeholder span with <img src="portrait.jpg" alt="Anush Bulusu"> */
+.portrait{
+  margin:0;
+  max-width:280px;
+  aspect-ratio:4/5;
+  background:#EAE5DD;
+  border:1px solid var(--rule);
+  display:grid; place-items:center;
+  overflow:hidden;
+}
+.portrait img{ width:100%; height:100%; object-fit:cover; }
+.portrait__ph{ font-family:var(--serif); font-size:2.2rem; color:var(--ink-3); letter-spacing:.06em; }
+.beyond{ margin-top:2.25rem; max-width:280px; }
+.beyond dt{ font-size:var(--t-xs); letter-spacing:.12em; text-transform:uppercase; color:var(--c-person); font-weight:500; }
+.beyond dd{ margin:.3rem 0 1.15rem; font-size:var(--t-sm); line-height:1.6; color:var(--ink-2); }
+.beyond dd:last-of-type{ margin-bottom:0; }
+
+/* ============================================================
+   JOURNEY — one timeline, one detail panel
+   ============================================================ */
+.journey{ margin-top:clamp(3.5rem,7vw,6rem); }
+.journey__top{
+  display:flex; flex-wrap:wrap; justify-content:space-between; align-items:baseline;
+  gap:.6rem 2.5rem;
+  padding-bottom:1.1rem;
+  border-bottom:1px solid var(--rule);
+}
+.journey__top p{ font-size:var(--t-sm); color:var(--ink-2); max-width:40em; }
+
+.tl{
+  position:relative;
+  display:grid;
+  grid-template-columns:repeat(5,minmax(0,1fr));
+  gap:0 clamp(.9rem,1.8vw,1.6rem);
+  margin-top:2.4rem;
+}
+.tl::before{
+  content:"";
+  position:absolute; top:4px; left:0; right:0;
+  height:1px; background:var(--rule);
+}
+.tl__b{
+  background:none; border:0; margin:0; padding:0 0 .3rem 0;
+  text-align:left; cursor:pointer;
+  display:grid; gap:.85rem; justify-items:start; align-content:start;
+}
+.tl__dot{
+  width:9px; height:9px; box-sizing:border-box;
+  border-radius:50%;
+  border:1px solid var(--ink-3);
+  background:var(--paper-warm);
+  transition:background .25s ease, border-color .25s ease, box-shadow .25s ease;
+}
+.tl__b[aria-selected="true"] .tl__dot{
+  background:var(--c-person);
+  border-color:var(--c-person);
+  box-shadow:0 0 0 4px rgba(154,117,99,.15);
+}
+.tl__yr{ font-size:var(--t-xs); letter-spacing:.08em; color:var(--ink-3); }
+.tl__st{ font-size:var(--t-sm); letter-spacing:.02em; color:var(--ink-2); line-height:1.4; }
+.tl__pr{ font-family:var(--serif); font-style:italic; font-size:var(--t-sm); line-height:1.45; color:var(--ink-3); }
+.tl__b:hover .tl__st{ color:var(--ink); }
+.tl__b[aria-selected="true"] .tl__st{ color:var(--ink); font-weight:500; }
+.tl__b[aria-selected="true"] .tl__pr{ color:var(--c-person); }
+
+.jn__item{ display:none; }
+.jn__item.is-active{ display:block; }
+.jn__mh{ display:none; }
+.jn__body{
+  display:grid;
+  grid-template-columns:minmax(0,65fr) minmax(0,35fr);
+  gap:clamp(2rem,5vw,4.5rem);
+  margin-top:clamp(2.5rem,4.5vw,3.5rem);
+  padding-top:clamp(2rem,3.5vw,2.75rem);
+  border-top:1px solid var(--rule);
+}
+.jn__yr{ font-size:var(--t-xs); letter-spacing:.1em; color:var(--ink-3); }
+.jn__h{
+  font-family:var(--serif);
+  font-weight:300;
+  font-size:clamp(1.5rem,2.8vw,2.1rem);
+  line-height:1.22;
+  letter-spacing:-.015em;
+  color:var(--ink);
+  max-width:22em;
+  margin:.9rem 0 1.4rem;
+}
+.jn__narr{ max-width:34em; color:var(--ink-2); }
+.jn__narr p + p{ margin-top:1.1em; }
+.jn__narr strong{ color:var(--ink); font-weight:500; }
+.jn__narr ul{ margin-top:.9em; }
+.jn__narr ul li{
+  font-family:var(--serif); font-style:italic;
+  font-size:var(--t-base); color:var(--ink); padding:.15rem 0;
+}
+.jn__key{ border-top:2px solid var(--c-person); padding-top:1.1rem; }
+.jn__key .label{ color:var(--c-person); }
+.jn__key p{
+  font-family:var(--serif);
+  font-size:var(--t-lg);
+  line-height:1.28;
+  color:var(--ink);
+  margin-top:.7rem;
+}
+.jn__words{ margin-top:1.8rem; }
+.jn__words li{ font-size:var(--t-sm); color:var(--ink-2); padding:.48rem 0; border-top:1px solid var(--rule); }
+
+/* stage-switch transition */
+@keyframes swap{
+  from{ opacity:0; transform:translateY(8px); }
+  to{ opacity:1; transform:none; }
+}
+.jn__item.is-active.is-swap .jn__body{ animation:swap .3s cubic-bezier(.2,.7,.2,1) both; }
+
+/* closing thread */
+.thread{
+  margin-top:clamp(3.5rem,6vw,5rem);
+  padding-top:clamp(2rem,3.5vw,2.75rem);
+  border-top:1px solid var(--rule);
+  display:grid;
+  grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);
+  gap:clamp(1.5rem,4vw,3.5rem);
+  align-items:start;
+}
+.thread__lead{ font-family:var(--serif); font-size:var(--t-lg); line-height:1.34; color:var(--ink-2); max-width:16em; }
+.thread li{
+  font-family:var(--serif);
+  font-weight:300;
+  font-size:clamp(1.15rem,2vw,1.5rem);
+  line-height:1.32;
+  letter-spacing:-.012em;
+  color:var(--ink);
+  padding:.42rem 0;
+}
+.thread li:last-child{ color:var(--c-person); }
+
+/* ============================================================
+   THINKING — publication index
+   ============================================================ */
+.idx{ margin-top:clamp(2rem,4vw,3rem); }
+.idx li{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) 150px 110px;
+  gap:.5rem 2rem;
+  align-items:baseline;
+  border-top:1px solid var(--rule);
+  padding:1.6rem 0;
+}
+.idx li:last-child{ border-bottom:1px solid var(--rule); }
+.idx__t{
+  font-family:var(--serif);
+  font-weight:300;
+  font-size:var(--t-lg);
+  line-height:1.3;
+  letter-spacing:-.01em;
+  color:var(--ink);
+  max-width:26em;
+}
+.idx__s{ font-size:var(--t-sm); color:var(--ink-3); margin-top:.45rem; max-width:34em; }
+.idx__topic{ font-size:var(--t-sm); color:var(--ink-2); }
+.idx__st{ font-size:var(--t-xs); letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3); }
+.idx__st::before{
+  content:""; display:inline-block;
+  width:5px; height:5px; border-radius:50%;
+  background:var(--c-craft);
+  margin-right:.5rem; vertical-align:middle;
+}
+
+/* ============================================================
+   CONNECT
+   ============================================================ */
+.contact{ margin-top:clamp(2rem,4vw,3rem); max-width:34em; }
+.contact div{
+  display:grid;
+  grid-template-columns:110px minmax(0,1fr);
+  gap:1.5rem;
+  align-items:baseline;
+  border-top:1px solid var(--rule);
+  padding:1.3rem 0;
+}
+.contact div:last-child{ border-bottom:1px solid var(--rule); }
+.contact dt{ font-size:var(--t-xs); letter-spacing:.12em; text-transform:uppercase; color:var(--ink-3); }
+.contact dd{ margin:0; }
+.contact a{
+  font-family:var(--serif);
+  font-size:var(--t-md);
+  color:var(--ink);
+  text-decoration:none;
+  border-bottom:1px solid var(--rule);
+  padding-bottom:2px;
+  word-break:break-word;
+  transition:color .2s ease, border-color .2s ease;
+}
+.contact a:hover{ color:var(--accent); border-bottom-color:var(--accent); }
+
+.footer{ border-top:1px solid var(--rule); padding-block:2.4rem 3.2rem; color:var(--ink-3); font-size:var(--t-sm); }
+.footer__inner{ display:flex; flex-wrap:wrap; gap:.7rem 2rem; justify-content:space-between; align-items:baseline; }
+
+/* ============================================================
+   MOTION — one intro sequence only
+   ============================================================ */
+@keyframes rise{ from{ opacity:0; transform:translateY(12px); } to{ opacity:1; transform:none; } }
+.intro > *{ animation:rise .8s cubic-bezier(.2,.7,.2,1) both; }
+.intro > *:nth-child(1){ animation-delay:.05s; }
+.intro > *:nth-child(2){ animation-delay:.15s; }
+.intro > *:nth-child(3){ animation-delay:.25s; }
+.intro > *:nth-child(4){ animation-delay:.35s; }
+.intro > *:nth-child(5){ animation-delay:.45s; }
+
+@media (prefers-reduced-motion:reduce){
+  html{ scroll-behavior:auto; }
+  *,*::before,*::after{
+    animation-duration:.001ms !important;
+    animation-delay:0ms !important;
+    transition-duration:.001ms !important;
+  }
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width:1060px){
+  .nav__list{ gap:1.1rem; }
+  .nav__list a{ font-size:var(--t-xs); }
+  .strip__grid{ grid-template-columns:repeat(3,minmax(0,1fr)); row-gap:1.6rem; }
+  .strip__grid li:nth-child(4){ padding-left:0; border-left:0; }
+  .strip__grid li:nth-child(n+4){ border-top:1px solid var(--rule); padding-top:1.4rem; }
+}
+@media (max-width:880px){
+  :root{ --nav-h:62px; }
+  .nav__toggle{ display:inline-block; }
+  .nav__list{
+    position:absolute; left:0; right:0; top:100%;
+    flex-direction:column; align-items:flex-start; gap:0;
+    background:var(--paper);
+    border-bottom:1px solid var(--rule);
+    padding:.4rem var(--gutter) 1.2rem;
+  }
+  .nav__list[hidden]{ display:none; }
+  .nav__list li{ width:100%; }
+  .nav__list a{ display:block; width:100%; padding:.8rem 0; font-size:var(--t-base); border-bottom:1px solid var(--rule); }
+  .nav__list a[aria-current="true"]::after{ display:none; }
+  .nav__list a[aria-current="true"]{ color:var(--accent); }
+
+  .grid{ grid-template-columns:1fr; row-gap:1.5rem; }
+  .rail{ grid-auto-flow:column; justify-content:start; align-items:center; gap:1rem; }
+
+  .pov__cols, .tracks, .concepts, .split, .about__split, .thread, .figs, .figs--3, .scale{
+    grid-template-columns:1fr;
+  }
+  .figs, .figs--3, .scale{ row-gap:1.75rem; }
+  .portrait{ max-width:230px; }
+  .beyond{ max-width:none; }
+
+  /* journey becomes an accordion */
+  .tl{ display:none; }
+  .jn__item{ display:block; border-top:1px solid var(--rule); }
+  .jn__item:last-of-type{ border-bottom:1px solid var(--rule); }
+  .jn__mh{
+    display:grid;
+    grid-template-columns:minmax(0,1fr) auto;
+    align-items:center;
+    gap:1rem;
+    width:100%;
+    background:none; border:0; padding:1.35rem 0;
+    text-align:left; cursor:pointer;
+  }
+  .jn__mh .tl__yr{ display:block; }
+  .jn__mh .tl__st{ display:block; margin-top:.2rem; color:var(--ink); }
+  .jn__mh .tl__pr{ display:block; margin-top:.3rem; }
+  .jn__mh__ic{ width:16px; height:16px; position:relative; }
+  .jn__mh__ic::before,.jn__mh__ic::after{
+    content:""; position:absolute; background:var(--c-person);
+    left:50%; top:50%; transform:translate(-50%,-50%);
+  }
+  .jn__mh__ic::before{ width:13px; height:1px; }
+  .jn__mh__ic::after{ width:1px; height:13px; transition:opacity .2s ease; }
+  .jn__item.is-open .jn__mh__ic::after{ opacity:0; }
+  .jn__body{ display:none; margin-top:0; padding-top:0; border-top:0; padding-bottom:1.8rem; }
+  .jn__item.is-open .jn__body{ display:grid; grid-template-columns:1fr; gap:2rem; }
+  .jn__h{ font-size:var(--t-xl); margin-top:0; }
+  .jn__item.is-active.is-swap .jn__body{ animation:none; }
+
+  .idx li{ grid-template-columns:minmax(0,1fr); }
+  .idx__topic, .idx__st{ font-size:var(--t-xs); }
+}
+@media (max-width:560px){
+  body{ font-size:1rem; }
+  .strip__grid{ grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .strip__grid li{ padding-left:1rem; }
+  .strip__grid li:nth-child(odd){ padding-left:0; border-left:0; }
+  .strip__grid li:nth-child(n+3){ border-top:1px solid var(--rule); padding-top:1.4rem; }
+  .ladder li{ grid-template-columns:1fr; padding-left:0; }
+  .contact div{ grid-template-columns:1fr; gap:.5rem; }
+  .seq li + li, .words li + li, .domains li + li{ padding-left:0; border-left:0; }
+  .seq, .words, .domains{ gap:.35rem 1rem; }
+}
+</style>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav" id="nav">
+  <div class="wrap nav__inner">
+    <a class="brand" href="#home">Anush Bulusu <span>/ AI &amp; Product</span></a>
+    <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navList">Menu</button>
+    <nav aria-label="Primary">
+      <ul class="nav__list" id="navList">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#product-value">AI × Product Value</a></li>
+        <li><a href="#transformation">AI × Enterprise Transformation</a></li>
+        <li><a href="#craft">AI-Native Product Craft</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#connect">Connect</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ========================= HERO ========================= -->
+  <section class="hero" id="home" aria-labelledby="hero-h">
+    <div class="wrap">
+      <div class="intro">
+        <p class="hero__id">Anush Bulusu — Enterprise AI · Product Leadership · Transformation Strategy</p>
+        <h1 class="display h-hero" id="hero-h">I work where AI has to become real business value.</h1>
+        <p class="lede">My work sits at the intersection of product strategy, enterprise transformation and AI-native product craft — turning emerging AI capabilities into scalable products, operating models and measurable outcomes.</p>
+        <p class="eyebrow">AI × Product × Enterprise Transformation</p>
+        <div class="btns">
+          <a class="link" href="#tracks">Explore the three tracks</a>
+          <a class="link link--quiet" href="https://www.linkedin.com/in/anushbulusu" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CREDIBILITY STRIP ==================== -->
+  <section class="strip" aria-label="Leadership snapshot">
+    <div class="wrap">
+      <ul class="strip__grid">
+        <li><span class="strip__v">16+ years</span><span class="strip__l">Enterprise technology, product and transformation</span></li>
+        <li><span class="strip__v">3 GenAI platforms</span><span class="strip__l">21 product modules</span></li>
+        <li><span class="strip__v">9 PMs</span><span class="strip__l">5 direct + 4 indirect</span></li>
+        <li><span class="strip__v">45+ engineers</span><span class="strip__l">Under functional product leadership</span></li>
+        <li><span class="strip__v">$10M+ ARR</span><span class="strip__l">Each across two scaled platforms</span></li>
+        <li><span class="strip__v">3× adoption</span><span class="strip__l">Across scaled products</span></li>
+      </ul>
+      <p class="note">Selected examples are intentionally presented at a high level and exclude confidential client, architecture and commercially sensitive information.</p>
+    </div>
+  </section>
+
+  <!-- ========================= POINT OF VIEW ========================= -->
+  <section class="section section--rule" id="pov" aria-labelledby="pov-h">
+    <div class="wrap grid">
+      <div class="rail">
+        <p class="eyebrow">My point of view</p>
+        <p class="rail__num">01</p>
+      </div>
+      <div>
+        <h2 class="display h-sec" id="pov-h" style="max-width:26em">AI does not create value because a model works. It creates value when the surrounding product, workflow and operating model work.</h2>
+
+        <div class="pov__cols" style="margin-top:clamp(2.25rem,4vw,3.25rem)">
+          <div class="prose">
+            <p>That belief shapes how I approach AI.</p>
+            <p>I start with the value equation, understand the workflow that needs to change, determine where intelligence genuinely creates leverage, build the right product system around it, and create the governance and operating mechanisms required for adoption at scale.</p>
+          </div>
+          <p class="pull" style="margin:0">The model matters. But the product around the model matters more. And in an enterprise, the system around the product often matters most.</p>
+        </div>
+
+        <ol class="chain" aria-label="How value accumulates">
+          <li style="--i:0"><span class="chain__dot" aria-hidden="true"></span><span class="chain__l">Capability</span></li>
+          <li style="--i:1"><span class="chain__dot" aria-hidden="true"></span><span class="chain__l">Product</span></li>
+          <li style="--i:2"><span class="chain__dot" aria-hidden="true"></span><span class="chain__l">Workflow</span></li>
+          <li style="--i:3"><span class="chain__dot" aria-hidden="true"></span><span class="chain__l">Adoption</span></li>
+          <li style="--i:4"><span class="chain__dot" aria-hidden="true"></span><span class="chain__l">Business value</span></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= THREE TRACKS ========================= -->
+  <section class="section section--rule" id="tracks" aria-labelledby="tracks-h">
+    <div class="wrap grid">
+      <div class="rail">
+        <p class="eyebrow">Three tracks</p>
+        <p class="rail__num">02</p>
+      </div>
+      <div>
+        <h2 class="display h-sec" id="tracks-h" style="max-width:20em">Three questions I keep working on.</h2>
+        <div class="tracks">
+          <a class="tk s-value" href="#product-value">
+            <span class="tk__n">Track 01</span>
+            <span class="tk__name">AI × Product Value</span>
+            <span class="tk__q">Can AI create measurable product and business value?</span>
+            <span class="tk__d">
+              <p>I am interested in the distance between an impressive AI capability and a product people will actually adopt, trust and pay for.</p>
+              <p>This track is about 0→1 product creation, product-market fit, adoption, economics, portfolio choices, GTM and value realization.</p>
+            </span>
+            <span class="tk__go"><em>Explore</em> →</span>
+          </a>
+          <a class="tk s-transform" href="#transformation">
+            <span class="tk__n">Track 02</span>
+            <span class="tk__name">AI × Enterprise Transformation</span>
+            <span class="tk__q">Can the enterprise actually absorb and scale AI?</span>
+            <span class="tk__d">
+              <p>AI transformation is rarely constrained only by technology.</p>
+              <p>Operating models, fragmented workflows, ownership, incentives, governance, change management and organizational capability often determine whether AI becomes infrastructure or remains a collection of pilots.</p>
+            </span>
+            <span class="tk__go"><em>Explore</em> →</span>
+          </a>
+          <a class="tk s-craft" href="#craft">
+            <span class="tk__n">Track 03</span>
+            <span class="tk__name">AI-Native Product Craft</span>
+            <span class="tk__q">Are we building AI products differently enough?</span>
+            <span class="tk__d">
+              <p>Probabilistic systems cannot be designed exactly like deterministic software.</p>
+              <p>AI-native product management requires new thinking around evaluation, agent behavior, human judgment, orchestration, observability, guardrails, trust and iteration.</p>
+            </span>
+            <span class="tk__go"><em>Explore</em> →</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= TRACK 1 ========================= -->
+  <section class="section section--rule s-value" id="product-value" aria-labelledby="t1-h">
+    <div class="wrap grid">
+      <div class="rail">
+        <p class="eyebrow">Track 1 — AI × Product Value</p>
+        <p class="rail__num">03</p>
+      </div>
+      <div class="stack-lg">
+        <div>
+          <h2 class="display h-sec" id="t1-h" style="max-width:20em">Start with the value equation, not the model.</h2>
+          <div class="prose" style="margin-top:1.6rem">
+            <p>A technically impressive AI capability is not automatically a good product. The questions I care about are more fundamental.</p>
+          </div>
+          <ul class="qs" style="margin-top:1.4rem">
+            <li>What user or business behavior changes?</li>
+            <li>What becomes faster, cheaper or materially better?</li>
+            <li>Will customers trust it?</li>
+            <li>Will they adopt it?</li>
+            <li>Does the economics work?</li>
+            <li>Is the opportunity large enough to justify building it?</li>
+          </ul>
+        </div>
+
+        <div class="proofs">
+          <p class="label">The four proofs</p>
+          <p class="proofs__row">
+            <span>Capability</span><span class="proofs__x" aria-hidden="true">×</span>
+            <span>Workflow</span><span class="proofs__x" aria-hidden="true">×</span>
+            <span>Trust</span><span class="proofs__x" aria-hidden="true">×</span>
+            <span>Economics</span>
+          </p>
+          <p class="proofs__note">If any one approaches zero, so does the product.</p>
+        </div>
+
+        <div>
+          <p class="label">From capability to commercial product</p>
+          <div class="prose" style="margin-top:1.3rem">
+            <p>I currently lead product strategy and P&amp;L direction across three GenAI platforms spanning 21 product modules. Two have scaled beyond $10M ARR each, with approximately 20% YoY growth and 3× user adoption. A third has moved from 0→1 into early commercial traction.</p>
+            <p>My role spans the entire journey:</p>
+          </div>
+          <ul class="seq" style="margin-top:1.3rem">
+            <li>Opportunity identification</li>
+            <li>Product thesis</li>
+            <li>Customer discovery</li>
+            <li>Product architecture</li>
+            <li>MVP / 0→1</li>
+            <li>Enterprise validation</li>
+            <li>GTM</li>
+            <li>Adoption</li>
+            <li>Expansion</li>
+            <li>Portfolio investment decisions</li>
+          </ul>
+          <ul class="figs" style="margin-top:clamp(2.25rem,4vw,3rem)">
+            <li><span class="figs__v">$10M+</span><span class="figs__l">ARR, each of two platforms</span></li>
+            <li><span class="figs__v">20%</span><span class="figs__l">YoY growth</span></li>
+            <li><span class="figs__v">3×</span><span class="figs__l">User adoption</span></li>
+            <li><span class="figs__v">0→1</span><span class="figs__l">Early commercial traction</span></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="label">Value beyond revenue</p>
+          <div class="prose" style="margin-top:1.3rem">
+            <p>Enterprise AI often creates value by changing the economics of an existing workflow. Across AI-led workflow transformation initiatives, outcomes have included:</p>
+          </div>
+          <ul class="figs figs--3" style="margin-top:clamp(1.75rem,3vw,2.5rem)">
+            <li><span class="figs__v">50%</span><span class="figs__l">Lower operational costs</span></li>
+            <li><span class="figs__v">40%</span><span class="figs__l">Faster go-to-market</span></li>
+            <li><span class="figs__v">75%</span><span class="figs__l">Reduction in processing effort</span></li>
+          </ul>
+          <div class="prose" style="margin-top:clamp(1.75rem,3vw,2.25rem)">
+            <p>The important question was never “Can AI perform this task?” It was: <strong>“Can we redesign the workflow so the entire system performs better?”</strong></p>
+          </div>
+        </div>
+
+        <p class="pull pull--lead">AI should not merely compress a task. It should improve the economics or experience of the whole workflow.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= TRACK 2 ========================= -->
+  <section class="section section--rule s-transform" id="transformation" aria-labelledby="t2-h">
+    <div class="wrap grid">
+      <div class="rail">
+        <p class="eyebrow">Track 2 — AI × Enterprise Transformation</p>
+        <p class="rail__num">04</p>
+      </div>
+      <div class="stack-lg">
+        <div>
+          <h2 class="display h-sec" id="t2-h" style="max-width:22em">AI transformation is an operating-model problem disguised as a technology program.</h2>
+          <div class="prose" style="margin-top:1.8rem">
+            <p>The first generation of enterprise AI programs focused heavily on use cases. The next challenge is different: how does an organization repeatedly identify valuable opportunities, build them safely, deploy them quickly, measure value and progressively move ownership closer to the business?</p>
+            <p>That requires more than an AI roadmap. <strong>It requires an operating model.</strong></p>
+          </div>
+        </div>
+
+        <div>
+          <p class="label">Maturity, as it actually progresses</p>
+          <ol class="ladder" style="margin-top:1.3rem">
+            <li style="--i:0"><span class="ladder__n">Pilot</span><span class="ladder__d">Prove that something works.</span></li>
+            <li style="--i:1"><span class="ladder__n">Productize</span><span class="ladder__d">Engineer reliability, governance and repeatability.</span></li>
+            <li style="--i:2"><span class="ladder__n">Standardize</span><span class="ladder__d">Create reusable patterns, tools and controls.</span></li>
+            <li style="--i:3"><span class="ladder__n">Federate</span><span class="ladder__d">Enable business teams to own more of the outcomes.</span></li>
+            <li style="--i:4"><span class="ladder__n">Industrialize</span><span class="ladder__d">Operate AI as an enterprise capability.</span></li>
+          </ol>
+        </div>
+
+        <div>
+          <p class="label">Central leverage. Distributed ownership.</p>
+          <div class="split" style="margin-top:1.6rem">
+            <div>
+              <h4>Central AI and product teams</h4>
+              <p>Create leverage through:</p>
+              <ul>
+                <li>Shared platforms</li>
+                <li>Reusable components</li>
+                <li>Governance</li>
+                <li>Standards</li>
+                <li>Evaluation frameworks</li>
+                <li>Architecture</li>
+                <li>Capability building</li>
+                <li>Partner ecosystems</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Business teams</h4>
+              <p>Should increasingly own:</p>
+              <ul>
+                <li>Use-case outcomes</li>
+                <li>Adoption</li>
+                <li>Workflow redesign</li>
+                <li>Change management</li>
+                <li>Operational performance</li>
+                <li>Continuous improvement</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <p class="label">Transformation across the enterprise</p>
+          <div class="prose" style="margin-top:1.3rem">
+            <p>Before my current GenAI portfolio, I led strategy and delivery across eight internal enterprise products spanning:</p>
+          </div>
+          <ul class="domains" style="margin-top:1.2rem">
+            <li>Finance</li><li>Legal</li><li>HR</li><li>Operations</li>
+            <li>Sales</li><li>Quality</li><li>Risk</li><li>Compliance</li>
+          </ul>
+          <div class="prose" style="margin-top:1.6rem">
+            <p>These were not independent applications. They were interconnected workflows cutting across organizational boundaries. The challenge was therefore as much about stakeholder alignment, operating models and process redesign as it was about software.</p>
+            <p>One transformation replaced fragmented manual workflows with integrated enterprise platforms connecting Sales, Delivery, Finance and Operations.</p>
+          </div>
+          <p class="fig-one" style="margin-top:clamp(2rem,3.5vw,2.75rem)"><b>$283M+</b><span>In revenue recognition enabled</span></p>
+        </div>
+
+        <div>
+          <p class="label">What this taught me</p>
+          <div class="prose" style="margin-top:1.3rem">
+            <p>Enterprise transformation succeeds when you can do all of these at the same time:</p>
+          </div>
+          <ul class="lines" style="margin-top:1.3rem">
+            <li>Understand the workflow</li>
+            <li>Structure ambiguity</li>
+            <li>Align competing stakeholders</li>
+            <li>Create clear ownership</li>
+            <li>Build the right product</li>
+            <li>Change how people work</li>
+            <li>Measure whether the transformation actually created value</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= TRACK 3 ========================= -->
+  <section class="section section--rule s-craft" id="craft" aria-labelledby="t3-h">
+    <div class="wrap grid">
+      <div class="rail">
+        <p class="eyebrow">Track 3 — AI-Native Product Craft</p>
+        <p class="rail__num">05</p>
+      </div>
+      <div class="stack-lg">
+        <div>
+          <h2 class="display h-sec" id="t3-h" style="max-width:22em">If the system is probabilistic, the product cannot be designed as if it were deterministic.</h2>
+          <div class="prose" style="margin-top:1.8rem">
+            <p>AI-native products introduce an entirely different set of product questions.</p>
+          </div>
+          <ul class="qs" style="margin-top:1.4rem">
+            <li>What should the model decide?</li>
+            <li>What should remain deterministic?</li>
+            <li>When should an agent act autonomously?</li>
+            <li>When should a human intervene?</li>
+            <li>How do we know whether the system is improving?</li>
+            <li>What happens when it is confidently wrong?</li>
+            <li>How do we make the system observable?</li>
+            <li>How does trust change the UX?</li>
+          </ul>
+          <div class="prose" style="margin-top:1.5rem">
+            <p>These questions change the craft of product management.</p>
+          </div>
+        </div>
+
+        <div>
+          <p class="label">Where the craft changes</p>
+          <ul class="concepts" style="margin-top:1.8rem">
+            <li>
+              <h4>Agentic system design</h4>
+              <p>Agent orchestration, tool use, agent boundaries, deterministic versus autonomous execution and multi-agent patterns.</p>
+            </li>
+            <li>
+              <h4>Human-in-the-loop</h4>
+              <p>Designing the correct boundary between automation, judgment, accountability and regulatory oversight.</p>
+            </li>
+            <li>
+              <h4>Evaluation</h4>
+              <p>Moving beyond conventional QA toward task-level evaluation, quality thresholds, failure analysis and continuous improvement.</p>
+            </li>
+            <li>
+              <h4>Guardrails &amp; governance</h4>
+              <p>Model and prompt governance, explainability, policy controls and responsible deployment.</p>
+            </li>
+            <li>
+              <h4>Observability</h4>
+              <p>Understanding what agents did, why they did it, what tools were used and where the system failed.</p>
+            </li>
+            <li>
+              <h4>Knowledge &amp; grounding</h4>
+              <p>Enterprise search, retrieval, knowledge graphs, integrations and the context required to make AI useful inside real workflows.</p>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="label">Changing how product teams build with AI</p>
+          <div class="prose" style="margin-top:1.3rem">
+            <p>I created and institutionalized an Agentic Product Development Lifecycle to explore a simple question: <strong>if AI changes the product we are building, should it also change the way we build products?</strong></p>
+            <p>The lifecycle introduced AI into discovery, problem framing, PRD development, design and execution while keeping human judgment and product accountability explicit.</p>
+          </div>
+          <ul class="figs figs--3" style="margin-top:clamp(2rem,3.5vw,2.75rem)">
+            <li><span class="figs__v">30–50%</span><span class="figs__l">Reduction in discovery and design cycles</span></li>
+            <li><span class="figs__v">15%</span><span class="figs__l">SDLC capacity reclaimed</span></li>
+            <li><span class="figs__v">18+</span><span class="figs__l">Product Managers trained</span></li>
+          </ul>
+          <div class="prose" style="margin-top:clamp(1.75rem,3vw,2.25rem)">
+            <p>The objective was not to make PMs use more AI tools. It was to create a better product-development system.</p>
+          </div>
+        </div>
+
+        <p class="pull pull--lead">AI-native product craft is not about putting an agent into every workflow. It is about understanding where intelligence creates genuine leverage — and designing the rest of the system around that reality.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= CURRENT SCALE ========================= -->
+  <section class="section band" aria-labelledby="scale-h">
+    <div class="wrap">
+      <p class="label">Current scale</p>
+      <h2 class="display h-sub" id="scale-h" style="margin-top:1rem;max-width:24em">The environment the work happens in.</h2>
+      <ul class="scale">
+        <li><span class="scale__v">9 Product Managers</span><span class="scale__l">5 direct, 4 indirect</span></li>
+        <li><span class="scale__v">45+ engineers</span><span class="scale__l">Functional product leadership</span></li>
+        <li><span class="scale__v">India, UK, US</span><span class="scale__l">Global operating scope</span></li>
+        <li><span class="scale__v">3 GenAI platforms</span><span class="scale__l">21 product modules</span></li>
+        <li><span class="scale__v">Fortune 500</span><span class="scale__l">Enterprise environments</span></li>
+        <li><span class="scale__v">Regulated workflows</span><span class="scale__l">High-stakes decision contexts</span></li>
+        <li><span class="scale__v">Partner ecosystem</span><span class="scale__l">Including Adobe Firefly integration</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ========================= ABOUT ========================= -->
+  <section class="section about s-person" id="about" aria-labelledby="about-h">
+    <div class="wrap grid">
+      <div class="rail">
+        <p class="eyebrow">About Anush</p>
+        <p class="rail__num">06</p>
+      </div>
+      <div>
+        <h2 class="display h-sec" id="about-h" style="max-width:22em">A curious mind, most at home where structure meets ambiguity.</h2>
+        <p class="about__sub">Building with purpose — bringing enough structure to chaos to create momentum that matters.</p>
+
+        <div class="about__split">
+          <div>
+            <!-- Portrait slot: replace the placeholder span with <img src="portrait.jpg" alt="Anush Bulusu"> -->
+            <figure class="portrait" aria-hidden="true">
+              <span class="portrait__ph">AB</span>
+            </figure>
+            <dl class="beyond">
+              <dt>Beyond work</dt>
+              <dd>Life is deliberately less structured.</dd>
+              <dt>Family</dt>
+              <dd>Keeps me grounded.</dd>
+              <dt>Sports</dt>
+              <dd>Cricket, tennis, Formula 1 and table tennis are rarely far away.</dd>
+              <dt>Road trips</dt>
+              <dd>Long drives are one of my favourite ways to reset.</dd>
+              <dt>Photography</dt>
+              <dd>Began as a hobby, unexpectedly turned into a small business, and taught me more about customers, entrepreneurship and human behaviour than I expected.</dd>
+            </dl>
+          </div>
+
+          <div>
+            <div class="prose">
+              <p>I have always been drawn to messy problems.</p>
+              <p>The kind where technology is only one part of the answer. A workflow crosses multiple teams. Everyone can see that something is broken, but no one owns the entire problem. Or a new technology suddenly makes something possible that simply was not possible six months earlier.</p>
+              <p>Somewhere between strategy, technology, operations and customers, somebody has to make sense of it. <strong>That is usually where I am happiest.</strong></p>
+              <p>I am naturally curious, and probably ask “why?” more often than is convenient.</p>
+            </div>
+            <ul class="qs" style="margin-top:1.5rem">
+              <li>Why does this workflow exist?</li>
+              <li>Why would someone change their behaviour?</li>
+              <li>Why are we solving this problem at all?</li>
+              <li>What would have to be true for this to work at 10× the scale?</li>
+              <li>And increasingly — what should AI actually do here, and what should it not do?</li>
+            </ul>
+            <div class="prose" style="margin-top:1.6rem">
+              <p>Over time, I have realised that one of my strongest roles is that of a translator — between business and technology, ambition and execution, emerging capability and something people can actually use.</p>
+              <p>I enjoy building things, understanding how things work and occasionally taking the longer route simply because the journey looks more interesting.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ---------- JOURNEY ---------- -->
+        <div class="journey">
+          <div class="journey__top">
+            <p class="label" id="journey-h">The journey so far</p>
+            <p>The titles changed over time. More importantly, so did the kinds of problems I learned to solve.</p>
+          </div>
+
+          <div class="tl" role="tablist" aria-label="Career journey">
+            <button class="tl__b" type="button" role="tab" id="tab-0" aria-controls="phase-0" aria-selected="true">
+              <span class="tl__dot" aria-hidden="true"></span>
+              <span class="tl__yr">2005–2012</span>
+              <span class="tl__st">Foundations</span>
+              <span class="tl__pr">Structured problem solving</span>
+            </button>
+            <button class="tl__b" type="button" role="tab" id="tab-1" aria-controls="phase-1" aria-selected="false" tabindex="-1">
+              <span class="tl__dot" aria-hidden="true"></span>
+              <span class="tl__yr">2012–2019</span>
+              <span class="tl__st">Influence</span>
+              <span class="tl__pr">Influence without authority</span>
+            </button>
+            <button class="tl__b" type="button" role="tab" id="tab-2" aria-controls="phase-2" aria-selected="false" tabindex="-1">
+              <span class="tl__dot" aria-hidden="true"></span>
+              <span class="tl__yr">2014–2020</span>
+              <span class="tl__st">Entrepreneurial lens</span>
+              <span class="tl__pr">Value is defined by the customer</span>
+            </button>
+            <button class="tl__b" type="button" role="tab" id="tab-3" aria-controls="phase-3" aria-selected="false" tabindex="-1">
+              <span class="tl__dot" aria-hidden="true"></span>
+              <span class="tl__yr">2020–2021</span>
+              <span class="tl__st">Strategic reset</span>
+              <span class="tl__pr">From product decisions to business decisions</span>
+            </button>
+            <button class="tl__b" type="button" role="tab" id="tab-4" aria-controls="phase-4" aria-selected="false" tabindex="-1">
+              <span class="tl__dot" aria-hidden="true"></span>
+              <span class="tl__yr">2021–present</span>
+              <span class="tl__st">AI-native scale</span>
+              <span class="tl__pr">From building products to building systems that scale</span>
+            </button>
+          </div>
+
+          <div class="jn" id="journey">
+
+            <div class="jn__item is-active" id="phase-0" role="tabpanel" aria-labelledby="tab-0">
+              <button class="jn__mh" type="button" aria-expanded="true" aria-controls="body-0">
+                <span>
+                  <span class="tl__yr">2005–2012</span>
+                  <span class="tl__st">Foundations</span>
+                  <span class="tl__pr">Structured problem solving</span>
+                </span>
+                <span class="jn__mh__ic" aria-hidden="true"></span>
+              </button>
+              <div class="jn__body" id="body-0">
+                <div>
+                  <p class="jn__yr">2005–2012</p>
+                  <h3 class="jn__h">Learning to think in systems.</h3>
+                  <div class="jn__narr">
+                    <p>Engineering gave me structure. My early years working on large enterprise and regulated systems taught me something equally important: technology rarely exists in isolation.</p>
+                    <p>I learned how complex systems connect, how global teams operate, and why reliability, process and context matter just as much as functionality.</p>
+                  </div>
+                </div>
+                <div>
+                  <div class="jn__key">
+                    <p class="label">Key lesson</p>
+                    <p>Structured problem solving</p>
+                  </div>
+                  <ul class="jn__words">
+                    <li>Engineering</li>
+                    <li>Enterprise systems</li>
+                    <li>Global delivery</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="jn__item" id="phase-1" role="tabpanel" aria-labelledby="tab-1">
+              <button class="jn__mh" type="button" aria-expanded="false" aria-controls="body-1">
+                <span>
+                  <span class="tl__yr">2012–2019</span>
+                  <span class="tl__st">Enterprise delivery → influence</span>
+                  <span class="tl__pr">Influence without authority</span>
+                </span>
+                <span class="jn__mh__ic" aria-hidden="true"></span>
+              </button>
+              <div class="jn__body" id="body-1">
+                <div>
+                  <p class="jn__yr">2012–2019</p>
+                  <h3 class="jn__h">Learning that influence scales further than authority.</h3>
+                  <div class="jn__narr">
+                    <p>As the problems became larger, the work became less about delivering a defined solution and more about aligning people around one.</p>
+                    <p>I worked across global enterprise transformation, financial services, risk, compliance and automation programs, gradually moving from execution into solution and product leadership.</p>
+                    <p>This phase taught me how to navigate ambiguity, work across organizational boundaries and translate technology decisions into business outcomes.</p>
+                  </div>
+                </div>
+                <div>
+                  <div class="jn__key">
+                    <p class="label">Key lesson</p>
+                    <p>Influence without authority</p>
+                  </div>
+                  <ul class="jn__words">
+                    <li>Transformation</li>
+                    <li>Stakeholders</li>
+                    <li>Solutions</li>
+                    <li>Leadership</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="jn__item" id="phase-2" role="tabpanel" aria-labelledby="tab-2">
+              <button class="jn__mh" type="button" aria-expanded="false" aria-controls="body-2">
+                <span>
+                  <span class="tl__yr">2014–2020</span>
+                  <span class="tl__st">Entrepreneurial lens</span>
+                  <span class="tl__pr">Value is defined by the customer</span>
+                </span>
+                <span class="jn__mh__ic" aria-hidden="true"></span>
+              </button>
+              <div class="jn__body" id="body-2">
+                <div>
+                  <p class="jn__yr">2014–2020</p>
+                  <h3 class="jn__h">Learning what customers actually value.</h3>
+                  <div class="jn__narr">
+                    <p>Alongside my corporate career, I built a photography business from the ground up. What began as curiosity became more than 250 customers and a real operating business.</p>
+                    <p>It was my first visceral lesson in product-market fit. Customers do not care how much effort went into something. They care whether it solves a problem, creates an experience or gives them something they value enough to pay for.</p>
+                    <p>That experience permanently changed how I think about products. Around the same period, my formal career also moved increasingly toward product management and intelligent workflow automation.</p>
+                  </div>
+                </div>
+                <div>
+                  <div class="jn__key">
+                    <p class="label">Key lesson</p>
+                    <p>Value is defined by the customer</p>
+                  </div>
+                  <ul class="jn__words">
+                    <li>Entrepreneurship</li>
+                    <li>Customers</li>
+                    <li>Product</li>
+                    <li>Commercial thinking</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="jn__item" id="phase-3" role="tabpanel" aria-labelledby="tab-3">
+              <button class="jn__mh" type="button" aria-expanded="false" aria-controls="body-3">
+                <span>
+                  <span class="tl__yr">2020–2021</span>
+                  <span class="tl__st">Strategic reset</span>
+                  <span class="tl__pr">From product decisions to business decisions</span>
+                </span>
+                <span class="jn__mh__ic" aria-hidden="true"></span>
+              </button>
+              <div class="jn__body" id="body-3">
+                <div>
+                  <p class="jn__yr">2020–2021</p>
+                  <h3 class="jn__h">Learning to zoom out.</h3>
+                  <div class="jn__narr">
+                    <p>Going to IIM Calcutta was a deliberate reset. After years of building and delivering technology, I wanted to better understand the systems around it — strategy, markets, finance, operations, organization design and growth.</p>
+                    <p>It changed the level at which I looked at product decisions. Instead of only asking “Can we build this?”, the questions increasingly became:</p>
+                    <ul>
+                      <li>Should we build it?</li>
+                      <li>For whom?</li>
+                      <li>Why now?</li>
+                      <li>What does it change for the business?</li>
+                    </ul>
+                  </div>
+                </div>
+                <div>
+                  <div class="jn__key">
+                    <p class="label">Key lesson</p>
+                    <p>From product decisions to business decisions</p>
+                  </div>
+                  <ul class="jn__words">
+                    <li>Strategy</li>
+                    <li>Business</li>
+                    <li>GTM</li>
+                    <li>Organization</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="jn__item" id="phase-4" role="tabpanel" aria-labelledby="tab-4">
+              <button class="jn__mh" type="button" aria-expanded="false" aria-controls="body-4">
+                <span>
+                  <span class="tl__yr">2021–present</span>
+                  <span class="tl__st">Product leadership → AI-native scale</span>
+                  <span class="tl__pr">From building products to building systems that scale</span>
+                </span>
+                <span class="jn__mh__ic" aria-hidden="true"></span>
+              </button>
+              <div class="jn__body" id="body-4">
+                <div>
+                  <p class="jn__yr">2021–present</p>
+                  <h3 class="jn__h">Building products, teams and operating systems.</h3>
+                  <div class="jn__narr">
+                    <p>The last chapter has brought the earlier ones together: enterprise technology, customer understanding, business strategy, product leadership and organizational transformation.</p>
+                    <p>I now lead product portfolios and teams working on enterprise GenAI and agentic systems, while spending an increasing amount of time on a larger question: <strong>how does AI change not only the products we build, but the way organizations themselves operate?</strong></p>
+                    <p>That has taken my work beyond individual products into portfolios, operating models, governance, adoption, capability building and enterprise transformation.</p>
+                  </div>
+                </div>
+                <div>
+                  <div class="jn__key">
+                    <p class="label">Key lesson</p>
+                    <p>From building products to building systems that scale</p>
+                  </div>
+                  <ul class="jn__words">
+                    <li>Enterprise AI</li>
+                    <li>Product leadership</li>
+                    <li>Agentic systems</li>
+                    <li>Transformation</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ---------- CLOSING ---------- -->
+        <div class="thread">
+          <p class="thread__lead">The common thread has stayed surprisingly consistent.</p>
+          <ol>
+            <li>Take something complex.</li>
+            <li>Understand what really matters.</li>
+            <li>Bring people around the problem.</li>
+            <li>Build the right system.</li>
+            <li>Make the outcome measurable.</li>
+            <li>And then keep learning.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= THINKING ========================= -->
+  <section class="section s-craft" id="thinking" aria-labelledby="think-h">
+    <div class="wrap grid">
+      <div class="rail">
+        <p class="eyebrow">What I am thinking about</p>
+        <p class="rail__num">07</p>
+      </div>
+      <div>
+        <h2 class="display h-sec" id="think-h" style="max-width:24em">Some questions I keep returning to as AI moves from demos into real products and enterprises.</h2>
+        <ul class="idx">
+          <li>
+            <div>
+              <p class="idx__t">The AI demo worked. The product still failed.</p>
+              <p class="idx__s">Why a capability that impresses in a demo can still fail every test that matters once it enters a real workflow.</p>
+            </div>
+            <p class="idx__topic">AI product</p>
+            <p class="idx__st">In progress</p>
+          </li>
+          <li>
+            <div>
+              <p class="idx__t">The Four Proofs</p>
+              <p class="idx__s">Capability, workflow, trust and economics — and why a weakness in any one of them collapses the product case.</p>
+            </div>
+            <p class="idx__topic">Product value</p>
+            <p class="idx__st">In progress</p>
+          </li>
+          <li>
+            <div>
+              <p class="idx__t">Your AI product has a behavioral contract. You just haven’t written it down.</p>
+              <p class="idx__s">What users implicitly expect a probabilistic system to do, and what happens when nobody has made that promise explicit.</p>
+            </div>
+            <p class="idx__topic">Product craft</p>
+            <p class="idx__st">In progress</p>
+          </li>
+          <li>
+            <div>
+              <p class="idx__t">Why your eval set is lying to you</p>
+              <p class="idx__s">How evaluation quietly drifts away from the tasks, edge cases and failure modes that decide real-world performance.</p>
+            </div>
+            <p class="idx__topic">Evaluation</p>
+            <p class="idx__st">In progress</p>
+          </li>
+          <li>
+            <div>
+              <p class="idx__t">You compressed the wrong step</p>
+              <p class="idx__s">Automating the visible task while the real cost, delay or risk sits somewhere else in the workflow.</p>
+            </div>
+            <p class="idx__topic">Workflow design</p>
+            <p class="idx__st">In progress</p>
+          </li>
+          <li>
+            <div>
+              <p class="idx__t">The validation tax</p>
+              <p class="idx__s">What it costs when every AI output has to be checked by a human, and how that cost reshapes the business case.</p>
+            </div>
+            <p class="idx__topic">Economics</p>
+            <p class="idx__st">In progress</p>
+          </li>
+          <li>
+            <div>
+              <p class="idx__t">What happens at 10×</p>
+              <p class="idx__s">The assumptions that quietly break when an AI product moves from pilot volumes to enterprise scale.</p>
+            </div>
+            <p class="idx__topic">Scale</p>
+            <p class="idx__st">In progress</p>
+          </li>
+        </ul>
+        <p class="note" style="margin-top:1.8rem">These will link to longer pieces on LinkedIn and Substack as they are published.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= CONNECT ========================= -->
+  <section class="section section--rule" id="connect" aria-labelledby="connect-h">
+    <div class="wrap grid">
+      <div class="rail">
+        <p class="eyebrow">Connect</p>
+        <p class="rail__num">08</p>
+      </div>
+      <div>
+        <h2 class="display h-sec" id="connect-h" style="max-width:21em">The problems I find most interesting sit between AI possibility and enterprise reality.</h2>
+        <p class="lede" style="margin-top:1.8rem">I am always interested in conversations around enterprise AI, product leadership, agentic transformation, operating models and building AI-native products at scale.</p>
+        <dl class="contact">
+          <div>
+            <dt>Email</dt>
+            <dd><a href="mailto:bulusuanush@gmail.com">bulusuanush@gmail.com</a></dd>
+          </div>
+          <div>
+            <dt>LinkedIn</dt>
+            <dd><a href="https://www.linkedin.com/in/anushbulusu" target="_blank" rel="noopener">linkedin.com/in/anushbulusu</a></dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <p>Anush Bulusu — Enterprise AI · Product Leadership · Transformation Strategy</p>
+    <p>Selected examples shown at a high level; confidential detail excluded.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ---------- mobile navigation ---------- */
+  var toggle = document.getElementById("navToggle");
+  var list = document.getElementById("navList");
+  var navMq = window.matchMedia("(max-width: 880px)");
+
+  function applyNavMode() {
+    list.hidden = navMq.matches;
+    toggle.setAttribute("aria-expanded", "false");
+  }
+  applyNavMode();
+  if (navMq.addEventListener) navMq.addEventListener("change", applyNavMode);
+  else navMq.addListener(applyNavMode);
+
+  toggle.addEventListener("click", function () {
+    var open = toggle.getAttribute("aria-expanded") === "true";
+    toggle.setAttribute("aria-expanded", String(!open));
+    list.hidden = open;
+  });
+  list.addEventListener("click", function (e) {
+    if (e.target.tagName === "A" && navMq.matches) {
+      list.hidden = true;
+      toggle.setAttribute("aria-expanded", "false");
+    }
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && navMq.matches && !list.hidden) {
+      list.hidden = true;
+      toggle.setAttribute("aria-expanded", "false");
+      toggle.focus();
+    }
+  });
+
+  /* ---------- sticky nav hairline ---------- */
+  var nav = document.getElementById("nav");
+  var onScroll = function () { nav.classList.toggle("is-stuck", window.scrollY > 10); };
+  onScroll();
+  window.addEventListener("scroll", onScroll, { passive: true });
+
+  /* ---------- scroll spy ---------- */
+  var links = Array.prototype.slice.call(list.querySelectorAll("a[href^='#']"));
+  var targets = links.map(function (a) {
+    var el = document.querySelector(a.getAttribute("href"));
+    return el ? { link: a, el: el } : null;
+  }).filter(Boolean);
+
+  if ("IntersectionObserver" in window && targets.length) {
+    var spy = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        targets.forEach(function (t) {
+          if (t.el === entry.target) t.link.setAttribute("aria-current", "true");
+          else t.link.removeAttribute("aria-current");
+        });
+      });
+    }, { rootMargin: "-45% 0px -50% 0px", threshold: 0 });
+    targets.forEach(function (t) { spy.observe(t.el); });
+  }
+
+  /* ---------- journey: tabs on desktop, accordion on mobile ---------- */
+  var journey = document.getElementById("journey");
+  if (journey) {
+    var items = Array.prototype.slice.call(journey.querySelectorAll(".jn__item"));
+    var tabs = Array.prototype.slice.call(document.querySelectorAll(".tl__b"));
+    var heads = items.map(function (it) { return it.querySelector(".jn__mh"); });
+    var current = 0;
+    var openOnMobile = true;
+
+    function render(animate) {
+      items.forEach(function (it, i) {
+        var active = i === current;
+        it.classList.toggle("is-active", active);
+        it.classList.toggle("is-open", active && openOnMobile);
+        if (animate && active) {
+          it.classList.remove("is-swap");
+          void it.offsetWidth;
+          it.classList.add("is-swap");
+        }
+        if (heads[i]) heads[i].setAttribute("aria-expanded", String(active && openOnMobile));
+      });
+      tabs.forEach(function (t, i) {
+        var on = i === current;
+        t.setAttribute("aria-selected", String(on));
+        t.tabIndex = on ? 0 : -1;
+      });
+    }
+
+    function select(i, animate, focusTab) {
+      current = Math.max(0, Math.min(items.length - 1, i));
+      openOnMobile = true;
+      render(animate);
+      if (focusTab && tabs[current]) tabs[current].focus();
+    }
+
+    tabs.forEach(function (t, i) {
+      t.addEventListener("click", function () { select(i, true, false); });
+      t.addEventListener("keydown", function (e) {
+        var step = e.key === "ArrowRight" ? 1 : e.key === "ArrowLeft" ? -1 : 0;
+        if (step) {
+          e.preventDefault();
+          select((current + step + tabs.length) % tabs.length, true, true);
+        } else if (e.key === "Home") {
+          e.preventDefault(); select(0, true, true);
+        } else if (e.key === "End") {
+          e.preventDefault(); select(tabs.length - 1, true, true);
+        }
+      });
+    });
+
+    heads.forEach(function (h, i) {
+      if (!h) return;
+      h.addEventListener("click", function () {
+        if (i === current && openOnMobile) {
+          openOnMobile = false;
+          render(false);
+        } else {
+          current = i;
+          openOnMobile = true;
+          render(false);
+        }
+      });
+    });
+
+    render(false);
+  }
+})();
+</script>
+</body>
+</html>
